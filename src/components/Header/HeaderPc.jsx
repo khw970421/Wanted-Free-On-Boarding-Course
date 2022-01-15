@@ -87,7 +87,7 @@ const rightHeaderStyle = {
 
 const headerButton = {
   border: "1px solid gray",
-  borderRadius: "5px",
+  borderRadius: "12px",
   backgroundColor: "white",
   color: "gray",
 };

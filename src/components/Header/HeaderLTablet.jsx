@@ -54,7 +54,6 @@ const headerStyle = {
   justifyContent: "space-evenly",
   alignItems: "center",
   height: "50px",
-  margin: "10px",
 };
 
 const leftHeaderStyle = {
@@ -69,7 +68,7 @@ const centerHeaderStyle = {
   display: "flex",
   justifyContent: "space-around",
   alignItems: "center",
-  width: "700px",
+  width: "500px",
   margin: "10px",
 };
 
@@ -87,7 +86,7 @@ const rightHeaderStyle = {
 
 const headerButton = {
   border: "1px solid gray",
-  borderRadius: "5px",
+  borderRadius: "12px",
   backgroundColor: "white",
   color: "gray",
 };
