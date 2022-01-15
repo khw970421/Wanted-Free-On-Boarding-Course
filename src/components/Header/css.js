@@ -4,13 +4,14 @@ const headerMainStyle = {
   alignContent: "center",
   width: "100px",
   margin: "10px",
+  fontWeight : "bolder"
 };
 
 const headerContentStyle = {
   display: "flex",
   justifyContent: "space-around",
   alignItems: "center",
-  width: "700px",
+  width: "600px",
   margin: "10px",
 };
 
@@ -23,7 +24,6 @@ const iconStyle = {
 const headerSubStyle = {
   display: "flex",
   width: "250px",
-  justifyContent: "space-around",
   margin: "10px",
 };
 
@@ -34,10 +34,31 @@ const headerGovServiceButtonStyle = {
   color: "gray",
 };
 
+const headerContainerStyle = { display: "flex", justifyContent: "center" };
+
+const headerPcStyle = {
+  display: "flex",
+  width: "1060px",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "50px",
+};
+
+const headerLTabletStyle = {
+  display: "flex",
+  width : "95%",
+  justifyContent: "space-evenly",
+  alignItems: "center",
+  height: "50px",
+};
+
 export {
   headerMainStyle,
   headerContentStyle,
   iconStyle,
   headerSubStyle,
   headerGovServiceButtonStyle,
+  headerPcStyle,
+  headerContainerStyle,
+  headerLTabletStyle,
 };
