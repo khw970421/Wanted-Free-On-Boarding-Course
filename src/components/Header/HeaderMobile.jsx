@@ -1,4 +1,5 @@
 import menuIcon from "../../imgs/icon/icon-menu.png";
+import {headerMobileContentArr } from "../../utils/constant";
 import {
     headerMainStyle,
     iconStyle,
@@ -10,17 +11,6 @@ import {
     flexBottomHeaderStyle,
     headerRegisterButton
   } from "./css.js";
-const headerContentArr = [
-  "채용",
-  "이벤트",
-  "직군별 연봉",
-  "이력서",
-  "커뮤니티",
-  "프리랜서",
-  "AI 합격예측!",
-];
-
-const headerMobileContentArr = ["홈",'채용',"이벤트"]
 
 const HeaderMobile = () => {
   return (
