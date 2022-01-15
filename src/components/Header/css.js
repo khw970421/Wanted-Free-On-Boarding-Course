@@ -58,13 +58,14 @@ const headerSTabletStyle = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  padding: "0px 5%",
+  width: "100%",
+  padding : "15px 20px"
 };
 
 // STablet 관련 CSS
 
 const flexColumnHeaderStyle = {
-  width: "800px",
+  width : "95%",
   display: "flex",
   flexDirection: "column",
 };
@@ -77,7 +78,7 @@ const flexTopHeaderStyle = {
   padding: "15px 0px",
 };
 
-const centerHeaderStyle = {
+const tabletContentStyle = {
   display: "flex",
   justifyContent: "space-around",
   alignItems: "center",
@@ -107,6 +108,15 @@ const headerRegisterButton = {
   height: "32px",
 };
 
+// Mobile 관련 CSS
+
+const mobileContentStyle = {
+  display: "flex",
+  justifyContent: "space-around",
+  alignItems: "center",
+  width: "200px",
+  margin: "10px",
+};
 
 export {
   headerMainStyle,
@@ -120,8 +130,9 @@ export {
   headerSTabletStyle,
   flexColumnHeaderStyle,
   flexTopHeaderStyle,
-  centerHeaderStyle,
+  tabletContentStyle,
   rightHeaderStyle,
   flexBottomHeaderStyle,
-  headerRegisterButton
+  headerRegisterButton,
+  mobileContentStyle
 };
