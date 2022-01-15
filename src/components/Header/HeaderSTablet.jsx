@@ -6,7 +6,7 @@ import {
     headerContainerStyle,
     flexColumnHeaderStyle,
     flexTopHeaderStyle,
-    centerHeaderStyle,
+    tabletContentStyle,
     flexBottomHeaderStyle,
     headerRegisterButton
   } from "./css.js";
@@ -35,7 +35,7 @@ const HeaderSTablet = () => {
           <button style={headerRegisterButton}>회원가입하기</button>
         </div>
         <div class="flexBottomHeader" style={flexBottomHeaderStyle}>
-          <div class="centerHeader" style={centerHeaderStyle}>
+          <div class="centerHeader" style={tabletContentStyle}>
             {headerContentArr.map((headerContent) => (
               <div>{headerContent}</div>
             ))}
