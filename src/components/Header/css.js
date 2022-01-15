@@ -1,6 +1,6 @@
 const headerMainStyle = {
   display: "flex",
-  justifyContent: "space-around",
+  justifyContent: "space-between",
   alignContent: "center",
   width: "100px",
   margin: "10px",
@@ -59,7 +59,6 @@ const headerSTabletStyle = {
   justifyContent: "center",
   alignItems: "center",
   width: "100%",
-  padding : "15px 20px"
 };
 
 // STablet 관련 CSS
@@ -75,12 +74,12 @@ const flexTopHeaderStyle = {
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  padding: "15px 0px",
+  padding : "15px 20px"
 };
 
 const tabletContentStyle = {
   display: "flex",
-  justifyContent: "space-around",
+  justifyContent: "space-between",
   alignItems: "center",
   width: "500px",
   margin: "10px",
@@ -95,7 +94,8 @@ const rightHeaderStyle = {
 const flexBottomHeaderStyle = {
     display: "flex",
     justifyContent : "space-between",
-    alignItems : "center"
+    alignItems : "center",
+    padding : "0px 20px"
 }
 
 const headerRegisterButton = {
@@ -112,7 +112,7 @@ const headerRegisterButton = {
 
 const mobileContentStyle = {
   display: "flex",
-  justifyContent: "space-around",
+  justifyContent: "space-between",
   alignItems: "center",
   width: "200px",
   margin: "10px",
