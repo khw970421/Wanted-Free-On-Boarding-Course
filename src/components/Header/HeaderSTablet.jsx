@@ -1,10 +1,14 @@
 import menuIcon from "../../imgs/icon/icon-menu.png";
 import {
     headerMainStyle,
-    headerContentStyle,
     iconStyle,
-    headerSubStyle,
-    headerGovServiceButtonStyle,
+    headerSTabletStyle,
+    headerContainerStyle,
+    flexColumnHeaderStyle,
+    flexTopHeaderStyle,
+    centerHeaderStyle,
+    flexBottomHeaderStyle,
+    headerRegisterButton
   } from "./css.js";
 const headerContentArr = [
   "채용",
@@ -18,7 +22,8 @@ const headerContentArr = [
 
 const HeaderSTablet = () => {
   return (
-    <div style={headerStyle}>
+    <section class="Header" style={headerContainerStyle}>
+    <div style={headerSTabletStyle}>
       <div class="flexColumn" style={flexColumnHeaderStyle}>
         <div class="flexTopHeader" style={flexTopHeaderStyle}>
           <div class="leftHeader" style={headerMainStyle}>
@@ -87,59 +92,10 @@ const HeaderSTablet = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
-const headerStyle = {
-  display: "flex",
-  fontWeight: "bolder",
-  justifyContent: "center",
-  alignItems: "center",
-  padding: "0px 5%",
-};
 
-const flexColumnHeaderStyle = {
-  width: "800px",
-  display: "flex",
-  flexDirection: "column",
-};
-
-
-const flexTopHeaderStyle = {
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "center",
-  padding: "15px 0px",
-};
-
-const centerHeaderStyle = {
-  display: "flex",
-  justifyContent: "space-around",
-  alignItems: "center",
-  width: "500px",
-  margin: "10px",
-};
-
-const rightHeaderStyle = {
-  display: "flex",
-  width: "250px",
-  justifyContent: "space-around",
-};
-
-const flexBottomHeaderStyle = {
-    display: "flex",
-    justifyContent : "space-between",
-    alignItems : "center"
-}
-
-const headerRegisterButton = {
-  border: "1px solid blue",
-  borderRadius: "17px",
-  backgroundColor: "white",
-  color: "blue",
-  padding: "0px 14px",
-  width: "114px",
-  height: "32px",
-};
 
 export default HeaderSTablet;

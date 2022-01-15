@@ -4,7 +4,7 @@ const headerMainStyle = {
   alignContent: "center",
   width: "100px",
   margin: "10px",
-  fontWeight : "bolder"
+  fontWeight: "bolder",
 };
 
 const headerContentStyle = {
@@ -15,16 +15,17 @@ const headerContentStyle = {
   margin: "10px",
 };
 
+const headerSubStyle = {
+  display: "flex",
+  width: "250px",
+  justifyContent: "space-between",
+  margin: "10px",
+};
+
 const iconStyle = {
   width: "17px",
   height: "14px",
   verticalAlign: "middle",
-};
-
-const headerSubStyle = {
-  display: "flex",
-  width: "250px",
-  margin: "10px",
 };
 
 const headerGovServiceButtonStyle = {
@@ -46,11 +47,66 @@ const headerPcStyle = {
 
 const headerLTabletStyle = {
   display: "flex",
-  width : "95%",
+  width: "95%",
   justifyContent: "space-evenly",
   alignItems: "center",
   height: "50px",
 };
+
+
+const headerSTabletStyle = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  padding: "0px 5%",
+};
+
+// STablet 관련 CSS
+
+const flexColumnHeaderStyle = {
+  width: "800px",
+  display: "flex",
+  flexDirection: "column",
+};
+
+
+const flexTopHeaderStyle = {
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  padding: "15px 0px",
+};
+
+const centerHeaderStyle = {
+  display: "flex",
+  justifyContent: "space-around",
+  alignItems: "center",
+  width: "500px",
+  margin: "10px",
+};
+
+const rightHeaderStyle = {
+  display: "flex",
+  width: "250px",
+  justifyContent: "space-around",
+};
+
+const flexBottomHeaderStyle = {
+    display: "flex",
+    justifyContent : "space-between",
+    alignItems : "center"
+}
+
+const headerRegisterButton = {
+  border: "1px solid blue",
+  borderRadius: "17px",
+  backgroundColor: "white",
+  color: "blue",
+  padding: "0px 14px",
+  width: "114px",
+  height: "32px",
+};
+
 
 export {
   headerMainStyle,
@@ -61,4 +117,11 @@ export {
   headerPcStyle,
   headerContainerStyle,
   headerLTabletStyle,
+  headerSTabletStyle,
+  flexColumnHeaderStyle,
+  flexTopHeaderStyle,
+  centerHeaderStyle,
+  rightHeaderStyle,
+  flexBottomHeaderStyle,
+  headerRegisterButton
 };
