@@ -2,7 +2,7 @@ import menuIcon from "../../imgs/icon/icon-menu.png";
 import { headerContentArr } from "../../utils/constant";
 
 import SearchIcon from "../HeaderIcon/SearchIcon";
-
+import ContentHighlight from "../HeaderIcon/ContentHighlight";
 import {
   headerMainStyle,
   headerContentStyle,
@@ -24,8 +24,11 @@ const HeaderLTablet = () => {
           <div>wanted</div>
         </div>
         <div class="centerHeader" style={headerContentStyle}>
-          {headerContentArr.map((headerContent) => (
-            <div>{headerContent}</div>
+          {headerContentArr.map(({ contentName, highlight }) => (
+            <div>
+              {contentName}
+              {highlight ? <ContentHighlight text={highlight} /> : <></>}
+            </div>
           ))}
         </div>
         <div class="rightHeader" style={headerSubStyle}>
