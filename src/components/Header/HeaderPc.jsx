@@ -1,4 +1,11 @@
 import menuIcon from "../../imgs/icon/icon-menu.png";
+import {
+  headerMainStyle,
+  headerContentStyle,
+  iconStyle,
+  headerSubStyle,
+  headerGovServiceButtonStyle,
+} from "./css.js";
 const headerContentArr = [
   "채용",
   "이벤트",
@@ -12,18 +19,18 @@ const headerContentArr = [
 const HeaderPc = () => {
   return (
     <div style={headerStyle}>
-      <div class="leftHeader" style={leftHeaderStyle}>
+      <div class="leftHeader" style={headerMainStyle}>
         <div>
           <img src={menuIcon} style={iconStyle} />
         </div>
         <div>wanted</div>
       </div>
-      <div class="centerHeader" style={centerHeaderStyle}>
+      <div class="centerHeader" style={headerContentStyle}>
         {headerContentArr.map((headerContent) => (
           <div>{headerContent}</div>
         ))}
       </div>
-      <div class="rightHeader" style={rightHeaderStyle}>
+      <div class="rightHeader" style={headerSubStyle}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -41,7 +48,7 @@ const HeaderPc = () => {
         </svg>
         <div>회원가입/로그인</div>
         <div>|</div>
-        <button style={headerButton}>기업 서비스</button>
+        <button style={headerGovServiceButtonStyle}>기업 서비스</button>
       </div>
     </div>
   );
@@ -54,42 +61,6 @@ const headerStyle = {
   justifyContent: "center",
   alignItems: "center",
   height: "50px",
-};
-
-const leftHeaderStyle = {
-  display: "flex",
-  justifyContent: "space-around",
-  alignContent: "center",
-  width: "100px",
-  margin: "10px",
-};
-
-const centerHeaderStyle = {
-  display: "flex",
-  justifyContent: "space-around",
-  alignItems: "center",
-  width: "700px",
-  margin: "10px",
-};
-
-const iconStyle = {
-  width: "17px",
-  height: "14px",
-  verticalAlign: "middle",
-};
-
-const rightHeaderStyle = {
-  display: "flex",
-  width: "250px",
-  justifyContent: "space-around",
-  margin: "10px",
-};
-
-const headerButton = {
-  border: "1px solid gray",
-  borderRadius: "12px",
-  backgroundColor: "white",
-  color: "gray",
 };
 
 export default HeaderPc;

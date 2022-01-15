@@ -1,4 +1,11 @@
 import menuIcon from "../../imgs/icon/icon-menu.png";
+import {
+    headerMainStyle,
+    headerContentStyle,
+    iconStyle,
+    headerSubStyle,
+    headerGovServiceButtonStyle,
+  } from "./css.js";
 const headerContentArr = [
   "채용",
   "이벤트",
@@ -14,7 +21,7 @@ const HeaderSTablet = () => {
     <div style={headerStyle}>
       <div class="flexColumn" style={flexColumnHeaderStyle}>
         <div class="flexTopHeader" style={flexTopHeaderStyle}>
-          <div class="leftHeader" style={leftHeaderStyle}>
+          <div class="leftHeader" style={headerMainStyle}>
             <div>
               <img src={menuIcon} style={iconStyle} />
             </div>
@@ -85,6 +92,7 @@ const HeaderSTablet = () => {
 
 const headerStyle = {
   display: "flex",
+  fontWeight: "bolder",
   justifyContent: "center",
   alignItems: "center",
   padding: "0px 5%",
@@ -96,13 +104,6 @@ const flexColumnHeaderStyle = {
   flexDirection: "column",
 };
 
-const leftHeaderStyle = {
-  display: "flex",
-  justifyContent: "space-around",
-  alignContent: "center",
-  width: "100px",
-  margin: "10px",
-};
 
 const flexTopHeaderStyle = {
   display: "flex",
@@ -117,12 +118,6 @@ const centerHeaderStyle = {
   alignItems: "center",
   width: "500px",
   margin: "10px",
-};
-
-const iconStyle = {
-  width: "17px",
-  height: "14px",
-  verticalAlign: "middle",
 };
 
 const rightHeaderStyle = {
