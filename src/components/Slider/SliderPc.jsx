@@ -3,12 +3,7 @@ import LeftArrow from "../SliderIcon/LeftArrow";
 import RightArrow from "../SliderIcon/RightArrow";
 import { sliderDataArr } from "../../utils/constant";
 import {
-  sliderContainerStyle,
   sliderImageStyle,
-  SliderExceptPcMainTextStyle,
-  SliderExceptPcSubTextStyle,
-  SliderExceptPcShortCutStyle,
-  sliderInformationStyle,
   sliderClickButtonStyle,
   sliderContainerPcStyle,
   sliderInformationPcStyle,
@@ -16,6 +11,8 @@ import {
   SliderPcSubTextStyle,
   SliderPcShortCutStyle,
   SliderPcHrStyle,
+  displayBlockStyle,
+  displayNoneStyle,
 } from "./css.js";
 import ArrowIcon from "../HeaderIcon/ArrowIcon";
 const SliderPc = () => {
@@ -53,16 +50,7 @@ const SliderPc = () => {
           return (
             <div
               key={idx}
-              style={
-                state === idx
-                  ? {
-                      display: "block",
-                      position: "relative",
-                      width: "1030px",
-                      height: "300px",
-                    }
-                  : { display: "none" }
-              }
+              style={state === idx ? displayBlockStyle : displayNoneStyle}
             >
               <img src={src} style={sliderImageStyle} />
               <div style={sliderInformationPcStyle}>

@@ -40,8 +40,8 @@ const sliderInformationStyle = {
 
 const sliderContainerPcStyle = {
   display: "flex",
-  width: "90%",
-  margin: "0% 5%",
+  width: "94%",
+  margin: "0% 3%",
   justifyContent: "center",
   alignItems: "center",
   overflow: "hidden",
@@ -96,6 +96,17 @@ const SliderPcHrStyle = {
   margin : "10px 0px"
 };
 
+const displayBlockStyle = {
+  display: "block",
+  position: "relative",
+  width: "1030px",
+  height: "300px",
+}
+
+const displayNoneStyle = {
+  display : "none"
+}
+
 export {
   sliderContainerStyle,
   sliderImageStyle,
@@ -110,4 +121,6 @@ export {
   SliderPcSubTextStyle,
   SliderPcShortCutStyle,
   SliderPcHrStyle,
+  displayBlockStyle,
+  displayNoneStyle
 };
