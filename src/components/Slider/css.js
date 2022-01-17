@@ -7,7 +7,7 @@ const sliderContainerStyle = {
 };
 
 const sliderImageStyle = {
-  width: "100%",
+  width: "1030px",
   height: "100%",
   borderRadius: "4px",
   objectFit: "cover",
@@ -45,7 +45,7 @@ const sliderContainerPcStyle = {
   justifyContent: "center",
   alignItems: "center",
   overflow: "hidden",
-  position:"relative"
+
 };
 
 const sliderClickButtonStyle = {
@@ -64,8 +64,8 @@ const sliderInformationPcStyle = {
   height: "146px",
   borderRadius: "4px",
   backgroundColor: "white",
-  bottom: "20px",
-  left : "130px"
+  top: "40%",
+	left:"5%"
 };
 
 const SliderPcMainTextStyle = {

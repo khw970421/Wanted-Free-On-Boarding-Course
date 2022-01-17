@@ -15,7 +15,7 @@ import {
   SliderPcMainTextStyle,
   SliderPcSubTextStyle,
   SliderPcShortCutStyle,
-  SliderPcHrStyle
+  SliderPcHrStyle,
 } from "./css.js";
 import ArrowIcon from "../HeaderIcon/ArrowIcon";
 const SliderPc = () => {
@@ -25,32 +25,44 @@ const SliderPc = () => {
     setInterval(() => {
       sliderRef.current = (sliderRef.current % sliderDataArr.length) + 1;
       setState(sliderRef.current);
-    }, 10000);
+    }, 20000);
   }, []);
 
- const left = () => {
-     if((sliderRef.current % sliderDataArr.length) - 1 < 1)
-     sliderRef.current = (sliderRef.current % sliderDataArr.length) - 1 + sliderDataArr.length;
-     else
-  sliderRef.current = (sliderRef.current % sliderDataArr.length) - 1;
-  setState(sliderRef.current);
- }
+  const left = () => {
+    if ((sliderRef.current % sliderDataArr.length) - 1 < 1)
+      sliderRef.current =
+        (sliderRef.current % sliderDataArr.length) - 1 + sliderDataArr.length;
+    else sliderRef.current = (sliderRef.current % sliderDataArr.length) - 1;
+    setState(sliderRef.current);
+  };
 
- const right = () => {
-  sliderRef.current = (sliderRef.current % sliderDataArr.length) + 1;
-  setState(sliderRef.current);
- }
+  const right = () => {
+    sliderRef.current = (sliderRef.current % sliderDataArr.length) + 1;
+    setState(sliderRef.current);
+  };
 
   return (
     <div>
       <div style={sliderContainerPcStyle}>
-      <button onClick={left} style={sliderClickButtonStyle}><LeftArrow/></button>
-
+        <div>
+          <button onClick={left} style={sliderClickButtonStyle}>
+            <LeftArrow />
+          </button>
+        </div>
         {sliderDataArr.map(({ src, idx, mainText, subText }) => {
           return (
             <div
               key={idx}
-              style={state === idx ? { display: "block",width:"1030px",height:"300px" } : { display: "none" }}
+              style={
+                state === idx
+                  ? {
+                      display: "block",
+                      position: "relative",
+                      width: "1030px",
+                      height: "300px",
+                    }
+                  : { display: "none" }
+              }
             >
               <img src={src} style={sliderImageStyle} />
               <div style={sliderInformationPcStyle}>
@@ -65,9 +77,12 @@ const SliderPc = () => {
             </div>
           );
         })}
-        <button onClick={right} style={sliderClickButtonStyle}><RightArrow/></button>
+        <div>
+          <button onClick={right} style={sliderClickButtonStyle}>
+            <RightArrow />
+          </button>
+        </div>
       </div>
-      
     </div>
   );
 };
