@@ -1,5 +1,8 @@
+import {useState} from 'react'
 import { sliderDataArr } from "../../utils/constant";
 import {
+  sliderContainerStyle,
+  sliderImageStyle,
   SliderExceptPcMainTextStyle,
   SliderExceptPcSubTextStyle,
   SliderExceptPcShortCutStyle,
@@ -7,13 +10,16 @@ import {
 } from "./css.js";
 import ArrowIcon from "../HeaderIcon/ArrowIcon";
 const SliderExceptPc = () => {
+  const [state, setState] = useState(2)
   return (
     <div>
-      SliderExceptPc
-      {sliderDataArr.map(({ idx, mainText, subText }) => {
+      <div style={sliderContainerStyle}>
+      {sliderDataArr.map(({ src,idx, mainText, subText }) => {
         return (
-          <div key={idx}>
-            <img src={idx} />
+          <div key={idx} style={state===idx ? {display:"block"} : {display:"none"} }>
+            <div style={{height:"185px"}}>
+            <img src={src} style={sliderImageStyle}/>
+            </div>
             <div style={sliderInformationStyle}>
               <div style={SliderExceptPcMainTextStyle}>{mainText}</div>
               <div style={SliderExceptPcSubTextStyle}>{subText}</div>
@@ -25,6 +31,7 @@ const SliderExceptPc = () => {
           </div>
         );
       })}
+      </div>
     </div>
   );
 };
