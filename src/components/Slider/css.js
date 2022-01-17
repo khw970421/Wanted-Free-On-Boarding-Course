@@ -1,3 +1,17 @@
+const sliderContainerStyle = {
+  display : "flex",
+  width : "90%",
+  margin : "0% 5%",
+  justifyContent : "center",
+  overflow : "hidden"
+}
+
+const sliderImageStyle = {
+  width : "100%",
+  height : "100%",
+  borderRadius : "30px"
+}
+
 const SliderExceptPcMainTextStyle = {
   marginTop: "20px",
   fontSize: "18px",
@@ -24,6 +38,8 @@ const sliderInformationStyle = {
 };
 
 export {
+  sliderContainerStyle,
+  sliderImageStyle,
   SliderExceptPcMainTextStyle,
   SliderExceptPcSubTextStyle,
   SliderExceptPcShortCutStyle,
