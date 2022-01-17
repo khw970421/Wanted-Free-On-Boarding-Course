@@ -11,6 +11,11 @@ import {
   sliderInformationStyle,
   sliderClickButtonStyle,
   sliderContainerPcStyle,
+  sliderInformationPcStyle,
+  SliderPcMainTextStyle,
+  SliderPcSubTextStyle,
+  SliderPcShortCutStyle,
+  SliderPcHrStyle
 } from "./css.js";
 import ArrowIcon from "../HeaderIcon/ArrowIcon";
 const SliderPc = () => {
@@ -39,19 +44,20 @@ const SliderPc = () => {
   return (
     <div>
       <div style={sliderContainerPcStyle}>
+      <button onClick={left} style={sliderClickButtonStyle}><LeftArrow/></button>
+
         {sliderDataArr.map(({ src, idx, mainText, subText }) => {
           return (
             <div
               key={idx}
-              style={state === idx ? { display: "block" } : { display: "none" }}
+              style={state === idx ? { display: "block",width:"1030px",height:"300px" } : { display: "none" }}
             >
-              <div >
-                <img src={src} style={sliderImageStyle} />
-              </div>
-              <div style={sliderInformationStyle}>
-                <div style={SliderExceptPcMainTextStyle}>{mainText}</div>
-                <div style={SliderExceptPcSubTextStyle}>{subText}</div>
-                <div style={SliderExceptPcShortCutStyle}>
+              <img src={src} style={sliderImageStyle} />
+              <div style={sliderInformationPcStyle}>
+                <div style={SliderPcMainTextStyle}>{mainText}</div>
+                <div style={SliderPcSubTextStyle}>{subText}</div>
+                <hr style={SliderPcHrStyle}></hr>
+                <div style={SliderPcShortCutStyle}>
                   바로가기
                   <ArrowIcon />
                 </div>
@@ -59,10 +65,9 @@ const SliderPc = () => {
             </div>
           );
         })}
+        <button onClick={right} style={sliderClickButtonStyle}><RightArrow/></button>
       </div>
       
-      <button onClick={left} style={sliderClickButtonStyle}><LeftArrow/></button>
-      <button onClick={right} style={sliderClickButtonStyle}><RightArrow/></button>
     </div>
   );
 };

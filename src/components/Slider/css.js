@@ -43,15 +43,58 @@ const sliderContainerPcStyle = {
   width: "90%",
   margin: "0% 5%",
   justifyContent: "center",
+  alignItems: "center",
   overflow: "hidden",
-}
+  position:"relative"
+};
 
 const sliderClickButtonStyle = {
-  width : "30px",
-  height : "60px",
+  width: "30px",
+  height: "60px",
   opacity: ".5",
-  borderRadius: "15px"
-}
+  borderRadius: "15px",
+  margin : "0px 15px"
+};
+
+const sliderInformationPcStyle = {
+  position: "absolute",
+  display: "flex",
+  flexDirection: "column",
+  width: "300px",
+  height: "146px",
+  borderRadius: "4px",
+  backgroundColor: "white",
+  bottom: "20px",
+  left : "130px"
+};
+
+const SliderPcMainTextStyle = {
+  padding: "20px 20px 0px 20px",
+  fontSize: "18px",
+  lineHeight: 1,
+  fontWeight: 700,
+};
+
+const SliderPcSubTextStyle = {
+  padding: "10px 20px",
+  fontSize: "13px",
+  fontWeight: 500,
+  lineHeight: 1.15,
+  color: "#666",
+};
+
+const SliderPcShortCutStyle = {
+  color: "#36f",
+  padding: "0px 0px 0px 20px",
+};
+
+const SliderPcHrStyle = {
+  backgroundColor: "#ececec",
+  height: "1px",
+  width: "100%",
+  border: "0px",
+  margin : "10px 0px"
+};
 
 export {
   sliderContainerStyle,
@@ -61,5 +104,10 @@ export {
   SliderExceptPcShortCutStyle,
   sliderInformationStyle,
   sliderContainerPcStyle,
-  sliderClickButtonStyle
+  sliderClickButtonStyle,
+  sliderInformationPcStyle,
+  SliderPcMainTextStyle,
+  SliderPcSubTextStyle,
+  SliderPcShortCutStyle,
+  SliderPcHrStyle,
 };

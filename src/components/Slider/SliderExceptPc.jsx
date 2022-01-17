@@ -36,7 +36,7 @@ const SliderExceptPc = () => {
           return (
             <div
               key={idx}
-              style={state === idx ? { display: "block" } : { display: "none" }}
+              style={state === idx ? { display: "block" } : { display: "none" } }
             >
               <div style={{ height: "183px" }}>
                 <img src={src} style={sliderImageStyle} />
@@ -53,8 +53,6 @@ const SliderExceptPc = () => {
           );
         })}
       </div>
-      <button onClick={left}>-</button>
-      <button onClick={right}>+</button>
     </div>
   );
 };
