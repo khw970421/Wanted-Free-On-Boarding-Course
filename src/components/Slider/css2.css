@@ -57,7 +57,7 @@
   left: 5%;
 }
 
-.SlideImg{
+.SlideImg {
   width: 1060px;
   height: 300px;
   border-radius: 4px;
@@ -92,7 +92,7 @@
 }
 
 .exceptPcContainer {
-  width: 1060px;
+  width: 90%;
   margin: auto;
   overflow: hidden;
 }
@@ -111,7 +111,7 @@
   justify-content: center;
 }
 
-.SlideExceptPcImg{
+.SlideExceptPcImg {
   width: 1060px;
   height: 300px;
   border-radius: 4px;
@@ -129,9 +129,9 @@
   font-size: 13px;
   font-weight: 500;
   line-height: 1.15;
-  color: "#666";
+  color: #666;
 }
 
 .SliderExceptPcShortCutText {
-  color: "#36f";
+  color: #36f;
 }
