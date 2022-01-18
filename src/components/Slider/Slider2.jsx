@@ -53,11 +53,6 @@ export default function Slider() {
 
   return (
     <div className="Container">
-      <div>
-        <button className="leftBtn" onClick={clickLeftSliderBtn}>
-          <LeftArrow />
-        </button>
-      </div>
       <div ref={slideRef} className="SliderContainer">
         {sliderDataArr.map(({ src, idx, mainText, subText }) => {
           return (
@@ -81,6 +76,11 @@ export default function Slider() {
             </div>
           );
         })}
+      </div>
+      <div>
+        <button className="leftBtn" onClick={clickLeftSliderBtn}>
+          <LeftArrow />
+        </button>
       </div>
       <div>
         <button className="rightBtn" onClick={clickRightSliderBtn}>

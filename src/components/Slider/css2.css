@@ -12,8 +12,8 @@
   display: flex;
 }
 
-.SliderSubContainer{
-  position:relative
+.SliderSubContainer {
+  position: relative;
 }
 
 .Center {
@@ -29,25 +29,21 @@
 .leftBtn {
   position: absolute;
   top: 30%;
-  left: 13%;
-  transform: translate(-50%, -50%);
+  left: 30px;
   width: 30px;
   height: 60px;
   opacity: 0.5;
   border-radius: 15px;
-  margin: 0px 15px;
 }
 
 .rightBtn {
   position: absolute;
   top: 30%;
-  left: 85%;
-  transform: translate(-50%, -50%);
+  right: 30px;
   width: 30px;
   height: 60px;
   opacity: 0.5;
   border-radius: 15px;
-  margin: 0px 15px;
 }
 
 .SliderTextContainer {
