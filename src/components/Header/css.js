@@ -35,7 +35,12 @@ const headerGovServiceButtonStyle = {
   color: "gray",
 };
 
-const headerContainerStyle = { display: "flex", justifyContent: "center" };
+const headerContainerStyle = {
+  display: "flex",
+  justifyContent: "center",
+  borderBottom: "1px solid rgba(236,236,236,0.5)",
+  marginBottom: "20px",
+};
 
 const headerPcStyle = {
   display: "flex",
@@ -53,7 +58,6 @@ const headerLTabletStyle = {
   height: "50px",
 };
 
-
 const headerSTabletStyle = {
   display: "flex",
   justifyContent: "center",
@@ -64,17 +68,16 @@ const headerSTabletStyle = {
 // STablet 관련 CSS
 
 const flexColumnHeaderStyle = {
-  width : "95%",
+  width: "95%",
   display: "flex",
   flexDirection: "column",
 };
-
 
 const flexTopHeaderStyle = {
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  padding : "15px 20px"
+  padding: "15px 20px",
 };
 
 const tabletContentStyle = {
@@ -92,11 +95,11 @@ const rightHeaderStyle = {
 };
 
 const flexBottomHeaderStyle = {
-    display: "flex",
-    justifyContent : "space-between",
-    alignItems : "center",
-    padding : "0px 20px"
-}
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  padding: "0px 20px",
+};
 
 const headerRegisterButton = {
   border: "1px solid blue",
@@ -134,5 +137,5 @@ export {
   rightHeaderStyle,
   flexBottomHeaderStyle,
   headerRegisterButton,
-  mobileContentStyle
+  mobileContentStyle,
 };
