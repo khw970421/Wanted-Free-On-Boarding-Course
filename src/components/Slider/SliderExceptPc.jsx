@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./css2.css";
+import "./style.css";
 import { sliderDataArr } from "../../utils/constant";
 import ArrowIcon from "../HeaderIcon/ArrowIcon";
 const TOTAL_SLIDES = sliderDataArr.length - 1;
@@ -39,7 +39,7 @@ const SliderExceptPc = () => {
       <div ref={slideRef} className="exceptPcSliderContainer">
         {sliderDataArr.map(({ src, idx, mainText, subText }) => {
           return (
-            <div >
+            <div>
               <img
                 src={src}
                 draggable="false"
@@ -48,12 +48,12 @@ const SliderExceptPc = () => {
                 onMouseUp={mouseUpEvent}
               />
               <div className="SliderExceptPcTextContainer">
-              <div className="SliderExceptPcMainText">{mainText}</div>
-              <div className="SliderExceptPcSubText">{subText}</div>
-              <div className="SliderExceptPcShortCutText">
-                바로가기
-                <ArrowIcon />
-              </div>
+                <div className="SliderExceptPcMainText">{mainText}</div>
+                <div className="SliderExceptPcSubText">{subText}</div>
+                <div className="SliderExceptPcShortCutText">
+                  바로가기
+                  <ArrowIcon />
+                </div>
               </div>
             </div>
           );
@@ -64,4 +64,3 @@ const SliderExceptPc = () => {
 };
 
 export default SliderExceptPc;
-

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./css2.css";
+import "./style.css";
 import LeftArrow from "../SliderIcon/LeftArrow";
 import RightArrow from "../SliderIcon/RightArrow";
 import { sliderDataArr } from "../../utils/constant";
