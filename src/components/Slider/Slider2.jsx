@@ -3,6 +3,7 @@ import "./css2.css";
 import LeftArrow from "../SliderIcon/LeftArrow";
 import RightArrow from "../SliderIcon/RightArrow";
 import { sliderDataArr } from "../../utils/constant";
+import ArrowIcon from "../HeaderIcon/ArrowIcon";
 const TOTAL_SLIDES = sliderDataArr.length - 1;
 
 export default function Slider() {
@@ -60,13 +61,24 @@ export default function Slider() {
       <div ref={slideRef} className="SliderContainer">
         {sliderDataArr.map(({ src, idx, mainText, subText }) => {
           return (
-            <img
-              src={src}
-              draggable="false"
-              className="SliderImg"
-              onMouseDown={mouseDownEvent}
-              onMouseUp={mouseUpEvent}
-            />
+            <div>
+              <img
+                src={src}
+                draggable="false"
+                className="SliderImg"
+                onMouseDown={mouseDownEvent}
+                onMouseUp={mouseUpEvent}
+              />
+              <div className="SliderTextContainer">
+                <div className="SliderMainText">{mainText}</div>
+                <div className="SliderSubText">{subText}</div>
+                <hr className="SliderHrText"></hr>
+                <div className="SliderShortCutText">
+                  바로가기
+                  <ArrowIcon />
+                </div>
+              </div>
+            </div>
           );
         })}
       </div>

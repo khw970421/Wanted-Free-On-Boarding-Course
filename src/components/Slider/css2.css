@@ -19,6 +19,7 @@
 .SliderImg {
   width: 1060px;
   height: 300px;
+  border-radius: 4px;
 }
 
 .leftBtn {
@@ -43,4 +44,44 @@
   opacity: 0.5;
   border-radius: 15px;
   margin: 0px 15px;
+}
+
+.SliderTextContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 146px;
+  border-radius: 4px;
+  background-color: white;
+  top: 40%;
+  left: 5%;
+}
+
+.SliderMainText {
+  padding: 20px 20px 0px 20px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.SliderSubText {
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.15;
+  color: #666;
+}
+
+.SliderShortCutText {
+  color: #36f;
+  padding: 0px 0px 0px 20px;
+}
+
+.SliderHrText {
+  background-color: #ececec;
+  height: 1px;
+  width: 100%;
+  border: 0px;
+  margin: 10px 0px;
 }
