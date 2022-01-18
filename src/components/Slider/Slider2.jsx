@@ -7,7 +7,7 @@ const TOTAL_SLIDES = sliderDataArr.length - 1;
 
 export default function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [mouseDownPageY,setMouseDownPageY] = useState(0);
+  const [mouseDownPageX, setMouseDownPageX] = useState(0);
   const slideRef = useRef(null);
 
   const clickRightSliderBtn = () => {
@@ -25,30 +25,25 @@ export default function Slider() {
     }
   };
 
-  const mouseDownEvent = (e)=> {
-    setMouseDownPageY(e.pageY)
-    console.log('mouseDown',e.pageY)
+  const mouseDownEvent = (e) => {
+    setMouseDownPageX(e.pageX);
+  };
 
-  }
-
-  const mouseUpEvent = (e)=> {
-    console.log('mouseUp',e.pageY ,mouseDownPageY)
-    if(e.pageY < mouseDownPageY){
+  const mouseUpEvent = (e) => {
+    if (e.pageX > mouseDownPageX) {
       if (currentSlide === 0) {
         setCurrentSlide(TOTAL_SLIDES);
       } else {
         setCurrentSlide(currentSlide - 1);
       }
-    }
-    else{
+    } else {
       if (currentSlide >= TOTAL_SLIDES) {
         setCurrentSlide(0);
       } else {
         setCurrentSlide(currentSlide + 1);
       }
     }
-  }
-
+  };
 
   useEffect(() => {
     slideRef.current.style.transition = "all 0.5s ease-in-out";
@@ -64,7 +59,15 @@ export default function Slider() {
       </div>
       <div ref={slideRef} className="SliderContainer">
         {sliderDataArr.map(({ src, idx, mainText, subText }) => {
-          return <img src={src} draggable="false" className="SliderImg" onMouseDown={mouseDownEvent} onMouseUp={mouseUpEvent} />;
+          return (
+            <img
+              src={src}
+              draggable="false"
+              className="SliderImg"
+              onMouseDown={mouseDownEvent}
+              onMouseUp={mouseUpEvent}
+            />
+          );
         })}
       </div>
       <div>
