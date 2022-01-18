@@ -57,6 +57,12 @@
   left: 5%;
 }
 
+.SlideImg{
+  width: 1060px;
+  height: 300px;
+  border-radius: 4px;
+}
+
 .SliderMainText {
   padding: 20px 20px 0px 20px;
   font-size: 18px;
@@ -85,11 +91,30 @@
   margin: 10px 0px;
 }
 
+.exceptPcContainer {
+  width: 1060px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.exceptPcSliderContainer {
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 2em;
+  display: flex;
+}
+
 .SliderExceptPcTextContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.SlideExceptPcImg{
+  width: 1060px;
+  height: 300px;
+  border-radius: 4px;
 }
 
 .SliderExceptPcMainText {

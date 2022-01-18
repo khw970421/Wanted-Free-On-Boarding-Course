@@ -52,15 +52,15 @@ const SliderExceptPc = () => {
   }, [currentSlide]);
 
   return (
-    <div className="Container">
-      <div ref={slideRef} className="SliderContainer">
+    <div className="exceptPcContainer">
+      <div ref={slideRef} className="exceptPcSliderContainer">
         {sliderDataArr.map(({ src, idx, mainText, subText }) => {
           return (
             <div className="SliderSubContainer">
               <img
                 src={src}
                 draggable="false"
-                className="SliderImg"
+                className="SlideExceptPcImg"
                 onMouseDown={mouseDownEvent}
                 onMouseUp={mouseUpEvent}
               />
