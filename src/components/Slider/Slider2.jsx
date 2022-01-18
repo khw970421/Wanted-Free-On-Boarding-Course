@@ -61,7 +61,7 @@ export default function Slider() {
       <div ref={slideRef} className="SliderContainer">
         {sliderDataArr.map(({ src, idx, mainText, subText }) => {
           return (
-            <div>
+            <div className="SliderSubContainer">
               <img
                 src={src}
                 draggable="false"

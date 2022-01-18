@@ -12,6 +12,10 @@
   display: flex;
 }
 
+.SliderSubContainer{
+  position:relative
+}
+
 .Center {
   text-align: center;
 }
