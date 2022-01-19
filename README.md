@@ -1,5 +1,7 @@
 # [위코드 X 원티드] 프론트앤드 프리온보딩 선발 과제
 
+# 링크 : https://wanted-wecode.netlify.app/
+
 # Header 컴포넌트 
 >기본적으로 4가지 기준으로 헤더가 변화한다 판단했다. 
 
