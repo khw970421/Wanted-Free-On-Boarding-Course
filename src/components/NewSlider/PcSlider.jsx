@@ -12,20 +12,16 @@ const PcSlider = () => {
   );
 };
 
-const Wrapper = styled.div`
-  margin: 0 auto;
-  width: 100%; //;추가 주의
-`;
+const Wrapper = styled.div``;
 
 const ImageContainer = styled.div`
-  width: 100%;
-  overflow: hidden;
   display: flex;
+  margin-left: -77.5vw;
 `;
 
 const Image = styled.img`
-  width: 96%;
-  margin: 0% 2%;
+  width: 80vw;
+  margin: 0vh 2.5vw;
 `;
 
 export default PcSlider;
