@@ -11,19 +11,22 @@ const PcSlider = () => {
     slideRef.current.style.transform = `translateX(-${currentImgIdx * 85}vw)`; // 백틱을 사용하여 슬라이드로 이동하는 에니메이션을 만듭니다.
   }, [currentImgIdx]);
 
-  const mouseUp = ({ pageX }) => {
+  const mouseDown = ({ pageX }) => {
     setFirstPageX(pageX);
   };
 
-  const mouseDown = ({ pageX }) => {
-    if (pageX < firstPageX) {
-      console.log("왼쪽이동");
-    } else if (pageX > firstPageX) {
+  const mouseUp = ({ pageX }) => {
+    console.log( pageX,firstPageX,);
+    if (pageX > firstPageX) {
+      moveLeft();
+    } else if (pageX < firstPageX) {
       moveRight();
     }
   };
 
-  const moveLeft = () => {};
+  const moveLeft = () => {
+    setCurrentImgIdx(currentImgIdx - 1);
+  };
   const moveRight = () => {
     setCurrentImgIdx(currentImgIdx + 1);
   };
